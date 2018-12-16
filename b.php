@@ -13,6 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && in_array($_FILES['p']['type'],$t)){/
 
 ?>
 
+
 <link  href="css.css" rel="stylesheet"><!-- подключение стилей-->
 <body style="background:linear-gradient(to left, #F2C14E, #F78154);"><!-- стиль фона -->
 <p id="y">Hello user! Your ip:<?php echo $_SERVER['REMOTE_ADDR'];?></p><!-- ip адресс пользователя -->
@@ -28,11 +29,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && in_array($_FILES['p']['type'],$t)){/
 <form class="mn"action="b.php" method="POST"><p class="w">Date</p><input maxlength="20" name="n" class="text" type="text" value="<?php echo $r['i3']; ?>"/><input class="save" name="e4" type="submit" value="save"/></form>   <!--форма ввода даты рождения с кнопкой подтверждения-->       
 <form id="m2" action="b.php" method="POST"><textarea id="m5" name="f" rows="10" cols="55" wrap="virtual"><?php echo $r['q']; ?></textarea> <input id="m3" name="g" type="submit" value="сохранить"/><input id="m4" type="reset" value="стереть"/></form><!--форма ввода информации о себе-->
 <div id="m6">добавить информацию о себе</div>
-
 <div id="pin">
     <div id="pon">
          
     </div>
 </div>
-
+<p id="min2"><</p><p id="min">></p>
+<div id="m7">
+    <p id="m8">x</p>
+    <form action="b.php" method="post">
+        <p class="te">Ваша работа:</p>
+        <input maxlength="20" class="ne" type="text" name="b2" value="<?php echo $r['o']; ?>"/><br>
+        <p class="te">Ваше хобби:</p>
+        <input maxlength="20" class="ne" type="text" name="b3" value="<?php echo $r['p']; ?>"/><br>
+        <p class="te">Ваша деятельность:</p>
+        <input maxlength="20" class="ne" type="text" name="b4" value="<?php echo $r['m']; ?>"/><br>
+        <input id="b3" type="submit" name="b5" placeholder="Сохранить">
+    </form>
+</div>
+<script src="js.js"></script>
 </body>
