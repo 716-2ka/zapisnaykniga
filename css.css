@@ -6,3 +6,51 @@ font-weight:700;border:none;outline:none}
 .a::-webkit-input-placeholder{padding-left:5%}
 .b{width:90%;height:6vw;background:#eec110;border-radius:3vw;margin:2vw 0 0 20%;font-size:2vw;font-family:arial;
 font-weight:700;color:#fff;outline:none;border:none}
+
+#a{width:18%;font-size:4vw;font-family:arial;color:#fff;border-bottom:2px solid #eec110;margin:3vw 0 0 10%}
+#b{font-size:4vw;font-family:arial;color:#5d5074; margin:-4.2vw 0 5vw 56%}
+#y2{width:30%;height:35vw;background:black;margin:5% 0 0 5%;float:left;border-radius:2vw}
+#z{width:100%;height:100%;border-radius:2vw;border:none}
+#e{font-size:3vw;color:#fff;position:absolute;top:1vw;right:1vw}
+#x{margin:40vw 0 0 8%}
+.text{transform:translate(76%,-49vw);width:23%;height:2vw;background:linear-gradient(left,#4CCEB2, #2F8FD8);margin:5% 0 0 20%;font-size:1.5vw}
+.save{transform:translate(176%,-49vw);margin-left:1%;padding: 12px 40px;margin: 10px 20px;border-radius: 30px;background-image: linear-gradient(45deg, #6ab1d7 0%, #33d9de 50%, #002878 100%);
+background-position: 100% 0;background-size: 200% 200%;font-family: 'Montserrat', sans-serif;
+font-size: 24px;font-weight: 300;color: white;box-shadow: 0 16px 32px 0 rgba(0,40,120,.35);transition: .5s}
+#y{color:#fff;font-size:2vw;font-family:arial;font-weight:bold}
+.w{transform:translate(200%,-41vw);font-size:1vw;font-family:arial;font-weight:bold;line-height:8vw;width:20%;}
+#m2{width:70%;height:28vw;margin:-37vw 0 0 5%;background: linear-gradient(to bottom, #803e85 0%,#633b81 100%);
+border-radius:5vw;Color:white;font-size:2vw}
+#m3{position:relative;text-align:center;width:30%;height:10%;background:#f98500;border-radius:2vw;color:white;
+top:4vw;left:3%;float:left;line-height:-29%;font-size:2vw}
+#m4{position:relative;text-align:center;width:30%;height:10%;background:#000;border-radius:2vw;color:white;
+left:-12%;top:4vw;left:20%;line-height:-29%;font-size:2vw}
+#m5{border-radius:5vw;width:100%;height:20vw;background:linear-gradient(to bottom, #803e85 0%,#633b81 100%);
+border:none;outline:none;padding:0 0 0 5%;font-size:2vw}
+#m6{width:30%;height:4vw;background:black;border-radius:2vw;color:#fff;text-align:center;font-size:2vw;line-height:4vw;margin:2vw 0 2vw 25%}
+#m7{display:none;position:fixed;left:0;top:0;width:100%;height:100%;background:rgb(0,0,0,.9)}
+#m8{color:#fff;font-size:2vw;position:reltive;padding-left:98%;height:2vw}
+.ne{width:30%;height:4vw;border-radius:2vw;background:linear-gradient(to right, #2b5876 0%, #4e4376 51%, #2b5876 100%);border:none;outline:none;margin:3vw 0 0 30%;font-size:1vw;color:#fff}
+.ne:placeholder{font-size:1vw;color:#fff}
+.te{width:20%;position:relative;top:1vw;left:30%;color:#fff;font-size:2vw}
+#b3{width:30%;height:4vw;background:linear-gradient(to right,#c21500 0%,#ffc500 51%,#c21500 100%);border-radius:2vw;margin:3vw 0 0 30%;font-size:3vw;font-weight:700;color:#fff}
+
+#pin{
+    width:100%;
+    height:18vw;
+    overflow:hidden;
+    margin-bottom:3vw;
+    z-index:2;
+}
+#pon{
+    width:300%;
+    height:100%;
+    background:linear-gradient(90deg,#000,#fff);
+    position:relative;
+ left:0;
+ right:0;
+ transition:all ease 1s;
+ z-index:3;
+}
+#min{;margin:-22vw 0 0 2%;z-index:4;}
+#min2{color:white;margin:-22vw 0 0 0;float:left;z-index:5;}
