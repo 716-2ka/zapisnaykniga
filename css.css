@@ -1,0 +1,8 @@
+*{padding:0;margin:0}
+body{background:#373059}
+.c{margin-right:20%;float:left}
+.a{width:90%;height:6vw;background:#5c5074;border-radius:3vw;margin:2vw 0 0 20%;font-size:2vw;font-family:arial;
+font-weight:700;border:none;outline:none}
+.a::-webkit-input-placeholder{padding-left:5%}
+.b{width:90%;height:6vw;background:#eec110;border-radius:3vw;margin:2vw 0 0 20%;font-size:2vw;font-family:arial;
+font-weight:700;color:#fff;outline:none;border:none}
