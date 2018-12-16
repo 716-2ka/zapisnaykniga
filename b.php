@@ -11,6 +11,35 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && in_array($_FILES['p']['type'],$t)){/
  rename($_FILES['p']['tmp_name'],'z/'.$d['id'].'.jpg'); /*перемещаем файл из временной папки и переименовываем его присваивая в имени индевидуальный идентификатор*/ 
 }
 
+if( isset( $_POST['e2'] ) ){/*если нажата кнопка e2*/
+   $name=trim(htmlspecialchars(stripslashes($_POST[m])));/*фильтруем полученное поле*/
+   mysqli_query($a,"UPDATE user SET i ='$name' WHERE id='$g'");/*заносим в базу введенное значение*/
+   echo "<script>window.location.href='b.php'</script>";/*перезагружаем страницу*/
+    }
+if( isset( $_POST['e3'] ) ){/*если нажата кнопка e3*/
+    $fam=trim(htmlspecialchars(stripslashes($_POST[l])));/*фильтруем полученное поле*/
+    mysqli_query($a,"UPDATE user SET i2 ='$fam' WHERE id='$g'");/*заносим в базу введенное значение*/
+   echo "<script>window.location.href='b.php'</script>";/*перезагружаем страницу*/
+    }
+if( isset( $_POST['e4'] ) ){/*если нажата кнопка e4*/
+   $date=trim(htmlspecialchars(stripslashes($_POST[n])));/*фильтруем полученное поле*/
+   mysqli_query($a,"UPDATE user SET i3 ='$date' WHERE id='$g'");/*заносим в базу введенное значение*/
+   echo "<script>window.location.href='b.php'</script>";/*перезагружаем страницу*/
+    }
+if( isset( $_POST['b5'] ) ){/*если нажата кнопка b5*/
+  $h=trim(htmlspecialchars(stripslashes($_POST[b2])));/*фильтруем полученное поле*/
+  $h1=trim(htmlspecialchars(stripslashes($_POST[b3])));/*фильтруем полученное поле*/
+   $h2=trim(htmlspecialchars(stripslashes($_POST[b4])));/*фильтруем полученное поле*/
+ mysqli_query($a,"UPDATE user SET o ='$h' WHERE id='$g'");/*заносим в базу введенное значение*/
+mysqli_query($a,"UPDATE user SET p ='$h1' WHERE id='$g'");/*заносим в базу введенное значение*/
+mysqli_query($a,"UPDATE user SET m ='$h2' WHERE id='$g'");/*заносим в базу введенное значение*/
+   echo"<script>window.location.href='b.php'</script>";/*перезагружаем страницу*/
+    }
+if( isset( $_POST['g'] ) ){/*если нажата кнопка g*/
+   $q=trim(htmlspecialchars(stripslashes($_POST[f])));/*фильтруем полученное поле*/
+   mysqli_query($a,"UPDATE user SET q ='$q' WHERE id='$g'");/*заносим в базу введенное значение*/
+   echo "<script>window.location.href='b.php'</script>";/*перезагружаем страницу*/
+    }
 ?>
 
 
@@ -29,6 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && in_array($_FILES['p']['type'],$t)){/
 <form class="mn"action="b.php" method="POST"><p class="w">Date</p><input maxlength="20" name="n" class="text" type="text" value="<?php echo $r['i3']; ?>"/><input class="save" name="e4" type="submit" value="save"/></form>   <!--форма ввода даты рождения с кнопкой подтверждения-->       
 <form id="m2" action="b.php" method="POST"><textarea id="m5" name="f" rows="10" cols="55" wrap="virtual"><?php echo $r['q']; ?></textarea> <input id="m3" name="g" type="submit" value="сохранить"/><input id="m4" type="reset" value="стереть"/></form><!--форма ввода информации о себе-->
 <div id="m6">добавить информацию о себе</div>
+
 <div id="pin">
     <div id="pon">
          
